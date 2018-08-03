@@ -70,9 +70,9 @@ build
 docs/_build/
 
 # SQLite3 database files:
-*.db
-*.sqlite3
-*.sqlite
+#*.db
+#*.sqlite3
+#*.sqlite
 
 # PyBuilder
 target/
