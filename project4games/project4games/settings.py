@@ -25,7 +25,7 @@ SECRET_KEY = 'juxhzov$dl=@8^+ru5*k6+goax0jpywpsi5)dvxp%k(i+_1^qh'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['themonkeymaker.pythonanywhere.com']
 
 
 # Application definition
