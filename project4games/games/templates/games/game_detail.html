@@ -1,5 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Update a Game{% endblock title %}
+
+{% block content %}
 <h1>{{ object.name }}</h1>
 <p>{{ object.description }}</p>
 <a href="{{ object.source_link }}">Get the source</a>
 <a href="{{ object.play_link }}">Play it now</a>
 <p>Genre: {{ object.genre.all|join:", " }}</p>
+<a class="btn btn-primary" href="{% url 'games:game-update' object.id %}" role="button">Update</a>
+<a class="btn btn-danger" href="{% url 'games:game-delete' object.id %}" role="button">Delete</a>
+
+{% endblock content %}
+
